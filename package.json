@@ -1,15 +1,18 @@
 {
   "name": "guilherme-designn-portfolio",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "private": true,
   "type": "module",
   "description": "Portfolio and client portal powered by Netlify Functions and Blobs",
   "scripts": {
     "dev": "netlify dev",
-    "check": "node --check public/app.js && node --check netlify/functions/api.mjs && node --check netlify/functions/media.mjs"
+    "check": "node --check public/app.js && node --check netlify/functions/api.mjs && node --check netlify/functions/media.mjs && node --check netlify/functions/lib.mjs",
+    "build": "esbuild src/identity-client.js --bundle --platform=browser --format=iife --target=es2022 --outfile=public/identity.bundle.js"
   },
   "dependencies": {
-    "@netlify/blobs": "^11.1.6"
+    "@netlify/blobs": "^11.1.6",
+    "@netlify/identity": "^2.0.0",
+    "esbuild": "^0.25.12"
   },
   "engines": {
     "node": ">=20"

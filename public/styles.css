@@ -26,3 +26,10 @@
 .review-file button{display:inline-flex;align-items:center;gap:8px;padding:14px;border-radius:12px;border:1px solid var(--line);background:#1b1220;font-size:12px}.review-file button:hover{border-color:var(--line2);color:var(--light-pink)}
 .pdf-preview{width:min(900px,90vw);height:min(75vh,850px);border:0;background:white;border-radius:6px}
 .password-settings{padding:21px 25px;border-radius:18px;margin-top:25px}.password-settings summary{cursor:pointer;font-size:12px;font-weight:700;color:#e2a9cf}.password-settings form{padding-top:17px;align-items:end}.password-settings .btn{align-self:end}
+
+/* V4.1 Netlify Identity */
+.login-fields{display:grid;gap:16px}
+.password-help{border-top:1px solid rgba(255,255,255,.1);padding-top:13px;color:#c3b3c5;font-size:13px}
+.password-help summary{cursor:pointer;color:#eca3cd;font-weight:600;list-style-position:inside}
+.password-help form{margin-top:14px;display:grid;gap:12px}
+.password-help .btn{justify-self:start}
