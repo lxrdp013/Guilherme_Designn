@@ -1,0 +1,17 @@
+{
+  "name": "guilherme-designn-portfolio",
+  "version": "4.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Portfolio and client portal powered by Netlify Functions and Blobs",
+  "scripts": {
+    "dev": "netlify dev",
+    "check": "node --check public/app.js && node --check netlify/functions/api.mjs && node --check netlify/functions/media.mjs"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^11.1.6"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
